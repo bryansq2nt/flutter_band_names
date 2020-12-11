@@ -109,7 +109,7 @@ class _HomeViewState extends State<HomeView> {
   addNewBand(){
     final  textController = new TextEditingController();
 
-    if(!Platform.isAndroid){
+    if(Platform.isAndroid){
       return showDialog(
           context: context,
           builder: (_) => AlertDialog(
